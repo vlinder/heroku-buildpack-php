@@ -70,6 +70,8 @@ export LD_LIBRARY_PATH=/app/php/lib/php
 export PHP_INI_SCAN_DIR=/app/www
 
 # install PEAR libraries
+echo "-----> Installing PEAR libraries"
+echo "       QueryPath"
 /app/php/bin/pear channel-discover pear.querypath.org
 /app/php/bin/pear install querypath/QueryPath
 
